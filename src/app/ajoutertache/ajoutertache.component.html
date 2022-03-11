@@ -2,39 +2,39 @@
 <br><div style=" border : solid; width : fit-content; margin: 0 auto;">AJOUTER UNE TACHE</div><br> 
 
 
-<form [formGroup]="ajoutTacheForm">
+<form [formGroup]="ajoutTacheForm" (ngSubmit)="ajouterTache()">
     <div style="text-align:center">
         <a>Intitulé</a><br>
-        <input type="text">
+        <input type="text" formControlName="intitule">
     </div>
     <br>
     <div style="text-align:center">
         <a>Description</a><br>
-        <input type="text">
+        <input type="text" formControlName="description">
     </div>
     <br>
     <div style="text-align:center">
         <a>Date de création</a><br>
-        <input type="text">
+        <input type="date" formControlName="dateCreation">
     </div>
     <br>
     <div style="text-align:center">
         <a>Deadline</a><br>
-        <input type="text">
+        <input type="date" formControlName="deadline">
     </div>
     <br>
     <div style="text-align:center">
         <a>Date de fin</a><br>
-        <input type="text">
+        <input type="date" formControlName="dateFin">
     </div>
     <br>
     <div style="text-align:center">
         <a>Priorité</a><br>
-        <input type="text">
+        <input type="text" formControlName="priorite">
     </div>
     <br>
     <div style="text-align: center">
-    <button>Ajouter</button>
+    <button type="submit">Ajouter</button>
     </div>
 
     

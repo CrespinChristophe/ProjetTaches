@@ -17,4 +17,8 @@ export class AjoutertacheComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ajouterTache(){
+    
+  }
+
 }
