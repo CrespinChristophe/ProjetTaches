@@ -18,7 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule //ajouter cette ligne afin de bénéficier des FormGroup
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,7 +10,7 @@ export class AjoutertacheComponent implements OnInit {
 
   constructor() { }
 
-  ajoutTacheForm : FormGroup = new FormGroup({
+  ajoutTacheForm : FormGroup = new FormGroup({ // ajouter ReactiveFormsModule à app.module.ts dans imports
     "intitule": new FormControl(),
     "description": new FormControl(),
     "dateCreation": new FormControl(),
