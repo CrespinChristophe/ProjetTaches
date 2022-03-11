@@ -1,8 +1,8 @@
 
-<br><div style="text-align:center">AJOUTER UNE TACHE</div><br> 
+<br><div style=" border : solid; width : fit-content; margin: 0 auto;">AJOUTER UNE TACHE</div><br> 
 
 
-<form>
+<form [formGroup]="ajoutTacheForm">
     <div style="text-align:center">
         <a>Intitulé</a><br>
         <input type="text">
@@ -32,6 +32,11 @@
         <a>Priorité</a><br>
         <input type="text">
     </div>
+    <br>
+    <div style="text-align: center">
+    <button>Ajouter</button>
+    </div>
+
     
 </form>
 
